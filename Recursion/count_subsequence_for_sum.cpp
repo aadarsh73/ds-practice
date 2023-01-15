@@ -3,6 +3,9 @@ using namespace std;
 
 int print(int ind, int arr[], int n, int sum, int k){
     
+    //only if array has only positive numbers
+    if(sum>k) return 0;
+
     if(ind==n){
         if(sum==k){
             return 1;
